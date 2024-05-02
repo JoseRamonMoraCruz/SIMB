@@ -9,29 +9,36 @@
 
     <Button
         android:id="@+id/btnEntrarLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="88dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@color/azul800"
+        android:fallbackLineSpacing="false"
         android:fontFamily="@font/dancing_script"
-        android:text="Button"
+        android:hapticFeedbackEnabled="false"
+        android:text="Entrar"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLoginPass"
         app:layout_constraintVertical_bias="1.0" />
+
 
     <Button
         android:id="@+id/btnNewCountLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/abhaya_libre"
+        android:layout_marginBottom="4dp"
         android:background="null"
-        android:text="Button"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/newcount"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -48,11 +55,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
 
+
     <EditText
         android:id="@+id/etLoginEmail"
         android:layout_width="231dp"
         android:layout_height="58dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
         android:background="@drawable/item_border_button"
         android:backgroundTint="@color/azulverdonso"
         android:ems="10"
@@ -63,7 +71,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:text="Email" />
 
     <EditText
@@ -85,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/logo"
         android:layout_width="151dp"
         android:layout_height="137dp"
         android:layout_marginTop="32dp"
