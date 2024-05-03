@@ -43,10 +43,11 @@
 
     <TextView
         android:id="@+id/txtLogoLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="186dp"
+        android:layout_height="109dp"
         android:fontFamily="@font/dancing_script"
         android:text="Login"
+        android:textAlignment="center"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
