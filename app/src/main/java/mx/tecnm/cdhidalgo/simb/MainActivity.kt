@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         // Inicialización de la variable de sesión
         sesion = getSharedPreferences(Config.PREF_NAME, 0)
 
-        btnCrearCuenta.setOnClickListener { login() }
+        btnEntrar.setOnClickListener { login() }
     }
 
     private fun login() {
