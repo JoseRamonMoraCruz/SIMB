@@ -4,5 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="azulverdonso">#28C6A9</color>
     <color name="azul800">#013A65</color>
+    <color name="grisOscuro">#495155</color>
 
 </resources>

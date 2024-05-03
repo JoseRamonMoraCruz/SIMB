@@ -7,38 +7,36 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity" >
 
+
     <Button
         android:id="@+id/btnEntrarLogin"
-        android:layout_width="139dp"
-        android:layout_height="42dp"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="88dp"
         android:background="@drawable/border_button"
-        android:backgroundTint="@color/azul800"
-        android:fallbackLineSpacing="false"
         android:fontFamily="@font/dancing_script"
-        android:hapticFeedbackEnabled="false"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLoginPass"
         app:layout_constraintVertical_bias="1.0" />
 
-
     <Button
         android:id="@+id/btnNewCountLogin"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:background="null"
         android:fontFamily="@font/abhaya_libre"
         android:text="@string/newcount"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -49,6 +47,7 @@
         android:text="Login"
         android:textAlignment="center"
         android:textSize="80sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
