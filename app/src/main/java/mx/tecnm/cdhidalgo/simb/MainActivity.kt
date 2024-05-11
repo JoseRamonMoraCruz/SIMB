@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 apply()
             }
             // Se inicia la actividad MainActivity2
-            startActivity(Intent(this, crearcuentaInterfaz::class.java))
+            startActivity(Intent(this, Inicio::class.java))
         }, { error ->
             // Si la petición falla, se muestra un mensaje de error
             Toast.makeText(this, error.toString(), Toast.LENGTH_LONG).show()
