@@ -5,6 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <!-- color editdo -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="color">@color/lavenders</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
     </style>
     <style name="Theme.SIMB" parent="Base.Theme.SIMB" />
+
 </resources>

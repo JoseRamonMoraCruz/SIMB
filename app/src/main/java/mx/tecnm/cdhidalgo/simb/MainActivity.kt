@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         sesion = getSharedPreferences(Config.PREF_NAME, 0)
 
         btnEntrar.setOnClickListener {
-            val intent = Intent(this, Inicio::class.java)
+            val intent = Intent(this, MainActivityMenu::class.java)
             startActivity(intent)
         }
         btnCrearCuenta.setOnClickListener {

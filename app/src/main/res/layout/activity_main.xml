@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
 
     <Button
@@ -16,7 +16,9 @@
         android:background="@drawable/border_button"
         android:fontFamily="@font/dancing_script"
         android:text="@string/entrar"
+        android:textColorLink="@color/purple_200"
         android:textSize="18sp"
+        app:icon="@drawable/entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -62,7 +64,6 @@
         android:layout_height="58dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/item_border_button"
-        android:backgroundTint="@color/azulverdonso"
         android:ems="10"
         android:fontFamily="@font/abril_fatface"
         android:hint="Email"
@@ -79,8 +80,6 @@
         android:layout_height="58dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/item_border_button"
-        android:backgroundTint="@color/azulverdonso"
-        android:ems="10"
         android:fontFamily="@font/abril_fatface"
         android:hint="@string/password"
         android:inputType="textPassword"

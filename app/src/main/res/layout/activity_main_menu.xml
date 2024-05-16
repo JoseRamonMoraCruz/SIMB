@@ -9,12 +9,7 @@
     tools:openDrawer="start"
     android:id="@+id/drawer_layout"
     tools:context=".MainActivityMenu">
-    <!-- Tu contenido principal -->
 
-
-
-
-    <!-- Navigation View para el menú hamburguesa -->
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
