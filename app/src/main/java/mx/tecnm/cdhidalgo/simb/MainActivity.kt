@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         btnCrearCuenta = findViewById(R.id.btnNewCountLogin)
 
         // Inicialización de la variable de sesión
-        sesion = getSharedPreferences(Config.PREF_NAME, 0)
+        //sesion = getSharedPreferences(Config.PREF_NAME, 0)
 
         btnEntrar.setOnClickListener {
             val intent = Intent(this, MainActivityMenu::class.java)

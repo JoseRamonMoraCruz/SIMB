@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvlogout" />
 
     <EditText
-        android:id="@+id/etTelegonologout"
+        android:id="@+id/etTelefonologout"
         android:layout_width="231dp"
         android:layout_height="58dp"
         android:layout_marginTop="40dp"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTelegonologout" />
+        app:layout_constraintTop_toBottomOf="@+id/etTelefonologout" />
 
     <EditText
         android:id="@+id/etPasswordlogout"
@@ -108,6 +108,7 @@
         android:background="@drawable/border_button"
         android:fontFamily="@font/dancing_script"
         android:text="Crear"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:icon="@drawable/agregarusuario"
         app:layout_constraintBottom_toTopOf="@+id/btnTengocuentalogout"
