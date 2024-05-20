@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SIMB"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notificaciones"
+            android:exported="false" />
+        <activity
             android:name=".EditCuenta"
             android:exported="false" />
         <activity
@@ -28,7 +34,7 @@
             android:name=".crearcuentaInterfaz"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Bienvenido"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

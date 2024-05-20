@@ -205,6 +205,5 @@
           android:textSize="12sp" />
     </androidx.cardview.widget.CardView>
   </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

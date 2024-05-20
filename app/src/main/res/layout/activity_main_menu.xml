@@ -24,7 +24,6 @@
         app:menu="@menu/activity_main_drawer"
         android:backgroundTint="#013A65"
         app:itemTextColor="@color/white"
-
         />
 
 </androidx.drawerlayout.widget.DrawerLayout>
