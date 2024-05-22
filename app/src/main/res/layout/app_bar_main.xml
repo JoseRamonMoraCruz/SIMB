@@ -24,7 +24,7 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@drawable/fondo"
+      android:background="@color/azul800"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
       tools:context=".Inicio">
 
@@ -36,7 +36,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/prompt_black"
         android:text="INICIO"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

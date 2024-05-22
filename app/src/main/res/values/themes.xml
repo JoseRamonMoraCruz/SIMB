@@ -7,7 +7,7 @@
         <item name="windowNoTitle">true</item>
         <!-- color editdo -->
         <item name="colorPrimary">@color/lavender</item>
-        <item name="color">@color/lavenders</item>
+        <item name="color">@color/azul400</item>
         <item name="colorPrimaryVariant">@color/lavender</item>
     </style>
     <style name="Theme.SIMB" parent="Base.Theme.SIMB" />

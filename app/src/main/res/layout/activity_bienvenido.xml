@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@color/azul800"
     tools:context=".Bienvenido">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.93"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/hola" />
+        app:lottie_rawRes="@raw/saludos" />
 
     <Button
         android:id="@+id/btnBienvenido"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
 
-        android:backgroundTint="@color/azul800"
+        android:backgroundTint="@color/azul400"
         android:fontFamily="@font/abril_fatface"
         android:text="Bienvenido"
         android:textStyle="bold"
@@ -53,7 +53,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/prompt_black"
         android:text="SIMB"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
