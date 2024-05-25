@@ -2,15 +2,11 @@ package mx.tecnm.cdhidalgo.simb
 
 import android.content.Intent
 import android.content.SharedPreferences
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
+
 
 class MainActivity : AppCompatActivity() {
     // Declaración de variables para los elementos de la vista

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
+import android.widget.Button
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -16,6 +16,8 @@ import com.google.android.material.navigation.NavigationView
 class MainActivityMenu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var drawer: DrawerLayout
+    lateinit var DeteccionMovimiento: Button
+    lateinit var Config : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,17 @@ class MainActivityMenu : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
+
+        DeteccionMovimiento = findViewById(R.id.btnDeteccionMov)
+        Config = findViewById(R.id.btnConfiguracionMov)
+        DeteccionMovimiento.setOnClickListener {
+            val intent = Intent(this, DeteccionMov::class.java)
+            startActivity(intent)
+        }
+        Config.setOnClickListener {
+            val intent = Intent(this, Configuracion::class.java)
+            startActivity(intent)
+        }
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
@@ -64,4 +77,5 @@ class MainActivityMenu : AppCompatActivity(), NavigationView.OnNavigationItemSel
             true
         } else super.onOptionsItemSelected(item)
     }
+
 }

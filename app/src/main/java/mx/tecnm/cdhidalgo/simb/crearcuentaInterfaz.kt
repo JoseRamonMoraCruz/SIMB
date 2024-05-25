@@ -12,60 +12,65 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
 class crearcuentaInterfaz : AppCompatActivity() {
-    private lateinit var TengoCuenta : Button
-    private lateinit var CrearCuenta : Button
-    private lateinit var Nombre : EditText
-    private lateinit var Telefono : EditText
-    private lateinit var Correo : EditText
-    private lateinit var Contraseña : EditText
+    private lateinit var tengoCuentaButton: Button
+    private lateinit var crearCuentaButton: Button
+    private lateinit var nombreEditText: EditText
+    private lateinit var telefonoEditText: EditText
+    private lateinit var correoEditText: EditText
+    private lateinit var contraseñaEditText: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crearcuenta_interfaz)
 
-        TengoCuenta = findViewById(R.id.btnTengocuentalogout)
-        CrearCuenta = findViewById(R.id.btnCrearlogout)
-        Nombre = findViewById(R.id.etNombreCompletologout)
-        Telefono = findViewById(R.id.etTelefonologout)
-        Correo = findViewById(R.id.etEmaillogout)
-        Contraseña= findViewById(R.id.etPasswordlogout)
+        tengoCuentaButton = findViewById(R.id.btnTengocuentalogout)
+        crearCuentaButton = findViewById(R.id.btnCrearlogout)
+        nombreEditText = findViewById(R.id.etNombreCompletologout)
+        telefonoEditText = findViewById(R.id.etTelefonologout)
+        correoEditText = findViewById(R.id.etEmaillogout)
+        contraseñaEditText = findViewById(R.id.etPasswordlogout)
 
-        TengoCuenta.setOnClickListener {
+        tengoCuentaButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        CrearCuenta.setOnClickListener {
-            val nombre = Nombre.text.toString()
-            val telefono = Telefono.text.toString()
-            val correo = Correo.text.toString()
-            val contraseña = Contraseña.text.toString()
+        crearCuentaButton.setOnClickListener {
+            val nombreComp = nombreEditText.text.toString()
+            val telefono = telefonoEditText.text.toString()
+            val correo = correoEditText.text.toString()
+            val password = contraseñaEditText.text.toString()
 
-            val url = Uri.parse(Config.URL + "crear-cuenta") // Usamos Config.URL + "crear-cuenta"
+            // Cambia la URL a la correcta para la creación de cuentas
+            val url = Uri.parse(Config.URL + "users")
                 .buildUpon()
                 .build().toString()
 
-            val peticion = object: StringRequest(Request.Method.POST, url, { response ->
-                val intent = Intent(this, Cuenta::class.java)
-                intent.putExtra("nombre", nombre)
-                intent.putExtra("telefono", telefono)
-                intent.putExtra("correo", correo)
-                intent.putExtra("contraseña", contraseña)
-                startActivity(intent)
-            }, { error ->
-                Toast.makeText(this, "Error al crear la cuenta: ${error.message}", Toast.LENGTH_LONG).show()
-            }) {
+            val request = object : StringRequest(Request.Method.POST, url,
+                { response ->
+                    // Si la creación de cuenta es exitosa, redirige al usuario
+                    val intent = Intent(this, Cuenta::class.java)
+                    intent.putExtra("correo", correo)
+                    intent.putExtra("password", password)
+                    intent.putExtra("nombreComp", nombreComp)
+                    intent.putExtra("telefono", telefono)
+                    startActivity(intent)
+                },
+                { error ->
+                    // Manejo de errores al crear la cuenta
+                    Toast.makeText(this, "Error al crear la cuenta: ${error.message}", Toast.LENGTH_LONG).show()
+                }) {
                 override fun getParams(): Map<String, String> {
                     val params = HashMap<String, String>()
-                    params["nombre"] = nombre
-                    params["telefono"] = telefono
                     params["correo"] = correo
-                    params["contraseña"] = contraseña
+                    params["password"] = password
+                    params["nombreComp"] = nombreComp
+                    params["telefono"] = telefono
                     return params
                 }
             }
 
-            Volley.newRequestQueue(this).add(peticion)
+            Volley.newRequestQueue(this).add(request)
         }
     }
 }

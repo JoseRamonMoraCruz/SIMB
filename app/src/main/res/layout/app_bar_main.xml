@@ -37,7 +37,7 @@
         android:fontFamily="@font/prompt_black"
         android:text="INICIO"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -78,24 +78,13 @@
           style="@style/Widget.MaterialComponents.Button.TextButton"
           android:layout_width="match_parent"
           android:layout_height="35dp"
-          android:layout_marginTop="50dp"
+          android:layout_marginTop="70dp"
           android:padding="5dp"
           android:text="Deteccion en Movimiento"
           android:textAlignment="textStart"
           android:textColor="@color/black"
-          android:textSize="12sp" />
-
-      <Button
-          android:id="@+id/btnVistaVivoMov"
-          style="@style/Widget.MaterialComponents.Button.TextButton"
-          android:layout_width="match_parent"
-          android:layout_height="35dp"
-          android:layout_marginTop="100dp"
-          android:padding="5dp"
-          android:text="Vista en Vivo"
-          android:textAlignment="textStart"
-          android:textColor="@color/black"
-          android:textSize="12sp" />
+          android:textSize="12sp"
+          android:textStyle="bold" />
 
 
       <Button
@@ -103,24 +92,26 @@
           style="@style/Widget.MaterialComponents.Button.TextButton"
           android:layout_width="match_parent"
           android:layout_height="35dp"
-          android:layout_marginTop="155dp"
+          android:layout_marginTop="130dp"
           android:padding="5dp"
           android:text="Configuracion"
           android:textAlignment="textStart"
           android:textColor="@color/black"
-          android:textSize="12sp" />
+          android:textSize="12sp"
+          android:textStyle="bold" />
 
       <Button
           android:id="@+id/btnAnaliticaMov"
           style="@style/Widget.MaterialComponents.Button.TextButton"
           android:layout_width="match_parent"
           android:layout_height="35dp"
-          android:layout_marginTop="200dp"
+          android:layout_marginTop="190dp"
           android:padding="5dp"
           android:text="Analitica"
           android:textAlignment="textStart"
           android:textColor="@color/black"
-          android:textSize="12sp" />
+          android:textSize="12sp"
+          android:textStyle="bold" />
 
 
     </androidx.cardview.widget.CardView>
