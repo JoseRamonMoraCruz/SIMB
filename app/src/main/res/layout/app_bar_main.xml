@@ -54,12 +54,12 @@
         app:layout_constraintTop_toBottomOf="@id/tvSensor">
       <!-- Elementos internos del CardView para "Sensor de Movimiento" -->
 
-      <ImageView
-          android:id="@+id/imageView3"
+      <View
+          android:id="@+id/viewBackground"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:scaleType="fitXY"
-          app:srcCompat="@drawable/gradient_uno" />
+          android:layout_gravity="center"
+          android:background="#34a4fc" />
 
       <TextView
           android:id="@+id/tvSensorMov"
@@ -67,7 +67,7 @@
           android:layout_height="35dp"
           android:layout_marginTop="8dp"
           android:fontFamily="@font/prompt_black"
-          android:text="Sensor"
+          android:text="Movimiento"
           android:textAlignment="center"
           android:textColor="@color/black"
           android:textSize="24sp"
@@ -80,10 +80,11 @@
           android:layout_height="35dp"
           android:layout_marginTop="50dp"
           android:padding="5dp"
-          android:text="Deteccion en Movimiento"
+          android:text="Deteccion de Movimiento"
           android:textAlignment="textStart"
           android:textColor="@color/black"
-          android:textSize="12sp" />
+          android:textSize="12sp"
+          />
 
       <Button
           android:id="@+id/btnVistaVivoMov"
@@ -136,12 +137,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardMotionSensor">
+
+
       <!-- Elementos internos del CardView para "Sensor de Gas" -->
-      <ImageView
+      <View
           android:id="@+id/imageView4"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          app:srcCompat="@drawable/gradient_dos" />
+          app:srcCompat="@drawable/gradient_dos"
+          android:background="#34a4fc" />
+
 
       <TextView
           android:id="@+id/tvSensorGas"
@@ -149,7 +154,7 @@
           android:layout_height="wrap_content"
           android:layout_marginTop="8dp"
           android:fontFamily="@font/prompt_black"
-          android:text="Sensores"
+          android:text="Entrono"
           android:textAlignment="center"
           android:textColor="@color/black"
           android:textSize="24sp"
